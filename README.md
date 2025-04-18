@@ -1,74 +1,67 @@
-# 👋🏼 Bienvenid@ al Demo Day.
+# 🐾 Virtual Pet
 
-<h3 align="center"><strong>!Bienvenido a tu ultimo proyecto en Agile Innova Academy 🤖, estamos muy contentos de que seas parte de nuestra comunidad y poder apoyarte en tu crecimiento profesional en el maravilloso mundo del desarrollo de software!</strong></h3>
+**Virtual Pet** es una aplicación web que permite a los usuarios agendar citas para sus mascotas con veterinarios virtuales. El sistema ofrece una experiencia sencilla e intuitiva para registrar usuarios, gestionar sus mascotas y mantener un historial médico detallado de cada una de ellas.
 
-En este proyecto vas a poner en evidencia todos los conocimientos adquiridos en todo este proceso de aprendizaje, tales como ReactJS, JavaScript, TypeScript, Redux y Firebase.
+---
 
-# 🎯 Objetivo del DemoDay:
+## ✨ Funcionalidades principales
 
-Adquirir los conocimientos esenciales para realizar aplicaciones web dinámicas haciendo uso de React. 
+- Registro e inicio de sesión de usuarios.
+- Consulta de todos los servicios ofrecidos por el veterinario virtual.
+- Agendamiento de citas en línea con el veterinario de preferencia.
+- Gestión del perfil del usuario.
+- Registro de mascotas por usuario.
+- Historial médico detallado para cada mascota.
 
-Con el Demo Day se pretende que los beneficiarios demuestren todos sus conocimientos adquiridos a empresas Nacionales e Internacionales, con esto pueden vivir la experiencia de exponer un proyecto y una idea de negocio al mundo.
+---
 
-# ☕ Pasos para desarrollar el DemoDay:
+## 🛠 Tecnologías utilizadas
 
-1. Crear un proyecto con la plantilla Basic Kanban y en la descripción colocar:
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Base de datos:** PostgreSQL  
+- **ORM:** TypeORM  
 
->- Texto descriptivo.
->- Enlace del prototipo en alta fidelidad (marvel o herramienta usada).
->- Enlace del despliegue.
->- Enlace del video demo.
+---
 
-Todo esto usando markdown
 
-2. Crear dos milestones que corresponden a todo el desarrollo de la aplicación y se deben crear de esta forma:
 
->- **Componente Design Thinking:** Poner una descripción y los objetivos de ese componente.
->- **Componente técnico:** Poner una descripción y los objetivos de ese componente.
+## 📌 Notas
 
-3. Crear issues por cada una de las tareas de Design Thinking:
+- Para agendar una cita, el usuario debe estar registrado e iniciar sesión.
+- Cada cita se asocia a una mascota específica y queda registrada en su historial médico.
+- El historial médico es accesible desde el perfil del usuario, permitiéndole ver diagnósticos y tratamientos previos.
 
->- 5 por qué
->- Perfil del cliente
->- Mapa de valor
->- Prototipo de baja fidelidad
->- Prototipo de mediana fidelidad
->- Presentación
+> ⚠️ **Nota:** El registro de nuevos usuarios puede demorar un poco porque el servidor del backend está alojado en un servicio gratuito y puede tardar en activarse tras un período de inactividad.
 
-4. Crear issues por cada una de las tareas técnicas:
+---
 
-4.1. Grupos Front:
 
->- Readme profesional
->- Guía de estilos
->- Landing Page del producto
->- Diseño responsive
->- Usar Redux ó Zustand
->- Autenticación con Google y Facebook
->- Enrutamiento dinámico con protección de rutas
->- 2 Crud con Firestore
->- Imágenes y/o videos en la nube
->- Aplicación de Formularios con Formik y Validaciones con Yup (Las contraseñas deben contener entre 8 a 10 caracteres entre Mayúsculas, minúsculas y números)
->- Implementar un Plus en su proyecto
+## 📬 Contacto
 
-4.2. Grupos Fundamentals:
+Si tienes preguntas o sugerencias, puedes escribirme a [jorgeula300@gmail.com].
 
->- Diseño responsive
->- Readme profesional
->- Guía de estilos
->- Landing Page del producto
->- Diseño responsive
->- Usar HTML, CSS o un framework de CSS de su prefrencia y JS
->- Autenticación Register y Login de usuarios
->- Enrutamiento dinámico con protección de rutas
->- Crud manejando Promesas, fetch() y archivos JSON
->- 7 interfaces como mínimo
->- Imágenes y/o videos en la nube
->- Uso de JSON desplegado
->- Implementar un Plus en su proyecto
+---
 
-5. Aquellos issues que consideren crear para su proceso de desarrollo se deben adjuntar al milestone de Componente Técnico.
+_Disfruta de cuidar a tus mascotas con Virtual Pet 🐶🐱_
 
-6. Cada uno de estos issues debe estar asignado a una o más intergrantes del equipo de desarrollo. 
+---
 
-7. Colocar etiquetas que logren diferenciar los diferentes issues según el componente al que corresponde.
+## 📂 Repositorios
+
+- 🔙 Backend: [https://github.com/jorgeula300/back-virtual-pet](https://github.com/jorgeula300/back-virtual-pet)
+- 🔜 Frontend: [https://github.com/jorgeula300/front-virtual-pet](https://github.com/jorgeula300/front-virtual-pet)
+
+---
+
+## 🚀 Cómo comenzar
+
+### 1. Clona los dos repositorios
+
+```bash
+# Clonar backend
+git clone https://github.com/jorgeula300/back-virtual-pet.git
+cd back-virtual-pet
+npm install
+# Configura el archivo .env y ejecuta el servidor
+npm run dev
