@@ -31,8 +31,13 @@
 - Para agendar una cita, el usuario debe estar registrado e iniciar sesión.
 - Cada cita se asocia a una mascota específica y queda registrada en su historial médico.
 - El historial médico es accesible desde el perfil del usuario, permitiéndole ver diagnósticos y tratamientos previos.
+- Puedes acceder como veterinario con las siguientes credenciales:  
+  **Correo:** `dianaM@gmail.com`  
+  **Contraseña:** `M@ndoza1`
 
-> ⚠️ **Nota:** El registro de nuevos usuarios puede demorar un poco porque el servidor del backend está alojado en un servicio gratuito y puede tardar en activarse tras un período de inactividad.
+> ⚠️ **Nota 1:** El registro de nuevos usuarios puede demorar un poco porque el servidor del backend está alojado en un servicio gratuito y puede tardar en activarse tras un período de inactividad.  
+> ⚠️ **Nota 2:** El dashboard del veterinario no fue diseñado responsivamente, ya que se asumió que su uso sería exclusivamente desde una oficina en computadores de escritorio.
+
 
 ---
 
