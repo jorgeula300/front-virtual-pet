@@ -17,7 +17,7 @@
 
 ## 🛠 Tecnologías utilizadas
 
-- **Frontend:** HTML, CSS, JavaScript  
+- **Frontend:** HTML,TailwindCSS, JavaScript  
 - **Backend:** Node.js, Express.js  
 - **Base de datos:** PostgreSQL  
 - **ORM:** TypeORM  
