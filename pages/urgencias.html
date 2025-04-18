@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="../img/Logo3.jpeg" type="image/x-icon">
+        <title>Urgencias - Virtual Pet</title>
+        <link rel="stylesheet" href="../css/output.css">
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+
+        <!-- Encabezado -->
+        <header
+        class=" w-full h-[6vh] bg-coffeeGray  flex justify-between items-center fixed top-0 z-10">
+
+        <nav
+            class="w-[92%] flex justify-between items-center  gap-5 mx-auto">
+            <div class="  flex justify-start items-center  gap-2">
+                <img class="w-7 h-7 rounded-full" src="../img/Logo3.jpeg"
+                    alt="Logo">
+                <a
+                    class=" font-bold text-principal hover:text-gray-300 md:text-md text-sm"
+                    href="../index.html">VIRTUAL
+                    PET</a>
+            </div>
+
+            <div id="navMenu"
+            class="md:static  absolute bg-coffeeGray md:min-h-fit min-h-[50vh] left-0 top-[-900%] w-full md:w-auto flex items-center px-5 ">
+                <ul
+                    class=" flex flex-col md:flex-row md:items-center md:gap-5 gap-8 [&>li]:text-principal [&>li]:hover:text-gray-300 ">
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li><a href="../index.html#servicios">Servicios</a></li>
+                    <li><a href="../index.html#citas">Citas</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class=" flex justify-center items-center gap-2">
+                <div id="button-sesion">
+
+                </div>
+                <div class="md:hidden">
+                    <i id="menu"
+                        class='bx bx-menu text-3xl text-principal cursor-pointer '></i>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    
+    <div class="w-full h-[6vh]"></div>
+        <h2 class=" text-green-600 text-center py-4 text-3xl font-bold">Urgencias</h2>
+         
+            
+        
+
+        <!-- Banner -->
+        <section class="w-full md:px-16 lg:px-90 mt-8 px-3">
+            <img src="../img/emergenciasM.jpeg" alt="Urgencias"
+                class="w-full h-auto max-h-[370px] rounded-lg object-cover">
+        </section>
+
+        <!-- Contenido -->
+        <section class="max-w-2xl mx-auto bg-[#f2f1ec] p-8 mt-6  rounded-lg">
+            <h2 class="text-2xl font-bold text-green-600 mb-4 text-center">¿Qué
+                es el servicio de urgencias veterinarias?</h2>
+            <p class="mb-4 text-center justify">
+                Es un servicio especializado para atender situaciones críticas
+                que ponen en riesgo la vida de las mascotas, como accidentes,
+                intoxicaciones, convulsiones o dificultades respiratorias.
+            </p>
+
+            <h2
+                class="text-2xl font-bold text-green-600 mt-6 mb-4 text-center">¿Cómo
+                funciona?</h2>
+            <p class="mb-4 text-center ">
+                Cuando una mascota necesita atención urgente, los veterinarios
+                evalúan rápidamente su estado, estabilizan al paciente y
+                determinan el tratamiento adecuado. En algunos casos, pueden
+                requerirse cirugías o terapias intensivas.
+            </p>
+
+            <h2
+                class="text-2xl font-bold text-green-600 mt-6 mb-4 text-center">Beneficios
+                del servicio</h2>
+            <ul class="list-disc pl-6 space-y-2 ">
+                <li>Atención inmediata en emergencias.</li>
+                <li>Reducción del riesgo de complicaciones graves.</li>
+                <li>Mayor probabilidad de recuperación en casos críticos.</li>
+                <li>Profesionales capacitados para actuar en situaciones de alta
+                    complejidad.
+                </li>
+            </ul>
+
+            <div class="flex justify-center mt-5">
+                <a href="https://wa.me/+573122344119?text=Hola%2C%20quiero%20más%20información"
+                target="_blank"
+                rel="noopener noreferrer"
+                    class="bg-green-400 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg  flex flex-col items-center justify-center w-full max-w-sm mx-auto text-center">
+                    <span class="mb-2">📞 Si tienes alguna urgencia, contáctate
+                        con nuestra línea directa</span>
+                    <img
+                        src="../img/whatsapp.png"
+                        alt="WhatsApp Logo" class="w-10 h-10">
+                </a>
+
+            </div>
+        </section>
+
+        <script type="module" src="../script/menu.js"></script>
+
+    </body>
+</html>

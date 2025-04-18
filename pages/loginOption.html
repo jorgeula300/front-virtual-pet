@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/Logo3.jpeg" type="image/x-icon">
+    <title>Select user</title>
+</head>
+<body>
+
+    <header
+    class=" w-full h-[6vh] bg-coffeeGray  flex justify-between items-center fixed top-0 z-10">
+
+    <nav
+        class="w-[92%] flex justify-between items-center  gap-5 mx-auto">
+        <div class="  flex justify-start items-center  gap-2">
+            <img class="w-7 h-7 rounded-full" src="../img/Logo3.jpeg"
+                alt="Logo">
+            <a
+                class=" font-bold text-principal hover:text-gray-300 md:text-md text-sm"
+                href="../index.html">VIRTUAL
+                PET</a>
+        </div>
+
+        <div id="navMenu"
+        class="md:static  absolute bg-coffeeGray md:min-h-fit min-h-[50vh] left-0 top-[-900%] w-full md:w-auto flex items-center px-5 ">
+            <ul
+                class=" flex flex-col md:flex-row md:items-center md:gap-5 gap-8 [&>li]:text-principal [&>li]:hover:text-gray-300 ">
+                <li><a href="../index.html#inicio">Inicio</a></li>
+                <li><a href="../index.html#servicios">Servicios</a></li>
+                <li><a href="../index.html#citas">Citas</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class=" flex justify-center items-center gap-2">
+            <div id="button-sesion">
+
+            </div>
+            <div class="md:hidden">
+                <i id="menu"
+                    class='bx bx-menu text-3xl text-principal cursor-pointer '></i>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<div class=" w-full h-[10vh] md:hidden">
+
+</div>
+
+    <section class=" grid grid-cols-1 md:grid-cols-2 md:gap-2 w-full h-[90vh]  md:h-screen max-w-3xl justify-center items-center mx-auto px-2 [&>div]:h-[200px] [&>div]:mx-auto [&>div]:md:h-fit [&>div]:w-full [&>div]:max-w-[320px] [&>div]:md:w-full [&>div]:md:max-w-fit [&>div]:rounded-2xl [&>div]:overflow-hidden [&>div]:shadow  [&>div]:relative [&>div]:cursor-pointer [&>div]:transition [&>div]:transform [&>div]:hover:scale-95 [&>div]:duration-300">
+        <div id="user" >
+            <img  src="../img/usuario.jpeg" alt="users">
+            <div class=" absolute top-0 left-0 w-full h-full bg-[#0003] backdrop-blur-[0.8px] px-2 flex justify-center items-center "><h2 class="text-2xl font-bold text-center text-principal ">Inicia sesion como paciente</h2></div>
+        </div>
+        <div id="doctor">
+            <img  src="../img/medico.jpeg" alt="doctors">
+            <div class=" absolute top-0 left-0 w-full h-full bg-[#0003] backdrop-blur-[0.8px] px-2 flex justify-center items-center">
+                <h2 class="text-2xl font-bold text-center text-principal">Inicia sesion como médico</h2>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="../script/menu.js"></script>
+    <script type="module" src="../script/selectLogin.js"></script>
+    
+</body>
+</html>

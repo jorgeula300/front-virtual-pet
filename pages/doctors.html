@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/Logo3.jpeg" type="image/x-icon">
+    <title>Doctor</title>
+</head>
+
+<body>
+    <header class=" w-full h-[6vh] bg-coffeeGray  flex justify-between items-center fixed top-0 z-10">
+
+        <nav class="w-[92%] flex justify-between items-center  gap-5 mx-auto">
+            <div class="  flex justify-start items-center  gap-2">
+                <img class="w-7 h-7 rounded-full" src="../img/Logo3.jpeg" alt="Logo">
+                <a class=" font-bold text-principal hover:text-gray-300 md:text-md text-sm" href="../index.html">VIRTUAL
+                    PET</a>
+            </div>
+
+            <div id="navMenu"
+                class="md:static  absolute bg-coffeeGray md:min-h-fit min-h-[50vh] left-0 top-[-900%] w-full md:w-auto flex items-center px-5 ">
+                <ul
+                    class=" flex flex-col md:flex-row md:items-center md:gap-5 gap-8 [&>li]:text-principal [&>li]:hover:text-gray-300 ">
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li><a href="../index.html#servicios">Servicios</a></li>
+                    <li><a href="../index.html#citas">Citas</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class=" flex justify-center items-center gap-2">
+                <div id="button-sesion">
+
+                </div>
+                <div class="md:hidden">
+                    <i id="menu" class='bx bx-menu text-3xl text-principal cursor-pointer '></i>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="w-full h-[6vh]"></div>
+
+    <section class="w-full px-2 py-4 space-y-2">
+        <div class="w-full flex justify-between items-center max-w-[900px] mx-auto  mb-2">
+            <h2 class="md:text-2xl text-md  text-center font-semibold text-coffeeGray">
+                Selecciona un doctor
+            </h2>
+            <a href="./appointment.html"
+                class=" bg-green-500 hover:bg-green-700 text-principal transition px-2 py-1 rounded-2xl">Mis citas</a>
+        </div>
+
+        <div id="divDoctor"
+            class="w-full max-w-[900px] mx-auto grid md:grid-cols-3 grid-cols-1 justify-items-center items-center gap-y-4">
+        </div>
+
+        <div id="modalCita"
+            class=" fixed top-0 left-0 w-full min-h-screen z-50 bg-[#0003] backdrop-blur-[2px] hidden justify-center items-center transition-transform animate-fade animate-once animate-duration-1000 px-2">
+            <form action=""
+                class="w-full max-w-[500px] m-auto flex flex-col justify-center items-center border bg-principal text-coffeeGray [&>input]:border [&>input]:rounded-2xl [&>input]:w-full [&>input]:max-w-[450px] [&>input]:h-10 [&>input]:px-2 p-3 rounded-2xl shadow [&>input]:bg-white [&>textarea]:border [&>textarea]:rounded-2xl [&>textarea]:bg-white [&>textarea]:w-full [&>textarea]:max-w-[450px] [&>textarea]:px-2">
+                <label for="">Nombre de la mascota</label>
+                <input type="text" name="petName" />
+                <label for="">Cuantos años tiene la mascota</label>
+                <input type="number" name="petAge" />
+                <label for="">Tipo de mascota</label>
+                <input type="text" name="petType" />
+                <label for="">Genero de la mascota</label>
+                <select class="border border-solid rounded-xl bg-white px-2" id="petGender" name="petGender" required>
+                    <optgroup label="Seleccionar genero">
+                        <option class="hidden" value="">Selecciona</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
+                        <option value="other">Other</option>
+                    </optgroup>
+                </select>
+                <label for="">Descripcion de los sintomas</label>
+                <textarea name="petDescription" rows="4" cols="50"></textarea>
+                <label for="">Fecha de la cita</label>
+                <input id="inputDate" type="date" name="date" />
+                <label for="">Hora de la cita</label>
+                <select class="border border-solid rounded-xl bg-white px-2" id="time" name="time" required>
+                    <optgroup id="hCita" label="Hora de la cita">
+                        <option class="hidden" value="">Selecciona</option>
+                        <option id="timeDoctor" class="" value="08:00:00">8:00 AM</option>
+                        <option id="timeDoctor" value="09:00:00">9:00 AM</option>
+                        <option id="timeDoctor" value="10:00:00">10:00 AM</option>
+                        <option id="timeDoctor" value="11:00:00">11:00 AM</option>
+                        <option id="timeDoctor" value="14:00:00">14:00 PM</option>
+                        <option id="timeDoctor" value="15:00:00">15:00 PM</option>
+                        <option id="timeDoctor" value="16:00:00">16:00 PM</option>
+                        <option id="timeDoctor" value="17:00:00">17:00 PM</option>
+                    </optgroup>
+                </select>
+                <div class="flex gap-2">
+                    <div id="closeModal"
+                        class="border bg-red-500 hover:bg-red-400 text-principal font-semibold w-30 px-2 py-1 rounded-2xl shadow cursor-pointer mt-2 text-center">
+                        <span>Cerrar</span>
+                    </div>
+                    <button
+                        class=" border bg-green-500 hover:bg-green-400 text-principal font-semibold w-30 px-2 py-1 rounded-2xl shadow cursor-pointer mt-2"
+                        type="submit">Separar cita</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="../script/menu.js"></script>
+    <script type="module" src="../script/doctor.js"></script>
+</body>
+
+</html>

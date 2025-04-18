@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../img/Logo3.jpeg" type="image/x-icon">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body class="  ">
+
+    <header
+    class=" w-full h-[6vh] bg-coffeeGray  flex justify-between items-center fixed top-0 z-10">
+
+    <nav
+        class="w-[92%] flex justify-between items-center  gap-5 mx-auto">
+        <div class="  flex justify-start items-center  gap-2">
+            <img class="w-7 h-7 rounded-full" src="../img/Logo3.jpeg"
+                alt="Logo">
+            <a
+                class=" font-bold text-principal hover:text-gray-300 md:text-md text-sm"
+                href="../index.html">VIRTUAL
+                PET</a>
+        </div>
+
+        <div id="navMenu"
+        class="md:static  absolute bg-coffeeGray md:min-h-fit min-h-[50vh] left-0 top-[-900%] w-full md:w-auto flex items-center px-5 ">
+            <ul
+                class=" flex flex-col md:flex-row md:items-center md:gap-5 gap-8 [&>li]:text-principal [&>li]:hover:text-gray-300 ">
+                <li><a href="../index.html#inicio">Inicio</a></li>
+                <li><a href="../index.html#servicios">Servicios</a></li>
+                <li><a href="../index.html#citas">Citas</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class=" flex justify-center items-center gap-2">
+            <div id="button-sesion">
+
+            </div>
+            <div class="md:hidden">
+                <i id="menu"
+                    class='bx bx-menu text-3xl text-principal cursor-pointer '></i>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<div class="w-full h-[6vh]"></div>
+
+    <div class="w-full h-[80vh] flex justify-center items-center ">
+        <form
+            class=" md:w-[50%] w-[75%]  h-[50vh]  flex justify-center items-center  rounded-lg overflow-hidden shadow shadow-black"
+            action="">
+            <div class=" hidden md:block bg-black w-[50%] h-full overflow-hidden">
+                <img class=" w-full h-full object-cover" src="../img/slider3.jpeg" alt="slider">
+            </div>
+
+            <div
+                class="w-full md:w-[50%] px-3 py-3 space-y-2 [&>div>h2]:text-center [&>div>h2]:text-xl [&>div>h2]:font-bold [&>div]:flex [&>div]:flex-col  [&>div>input]:border [&>div>input]:bg-white [&>div>input]:rounded-xl  ">
+                <div>
+                    <img class="w-10 h-10 rounded-full mx-auto" src="../img/Logo3.jpeg" alt="Logo">
+                <h2>Iniciar Sesión</h2>
+                </div>
+                
+                <div>
+                    <label for="email">Correo</label>
+                    <input class="px-2" id="email" type="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input class="px-2" id="password" type="password" name="password" required>
+                </div>
+
+                <div class="">
+                    <div class=" flex flex-col justify-center items-center gap-2">
+                        <button type="submit"
+                            class=" border rounded-xl bg-[#00bf63] text-[#f2f1ec] shadow shadow-black font-semibold hover:bg-[#59a381] cursor-pointer w-[150px] md:text-md text-sm">Iniciar
+                            Session</button>
+                        <a href="../pages/register.html" class="text-sm text-center font-semibold"> Si no tienes una
+                            cuanta da clic aqui: <span
+                                class=" text-gray-500 underline decoration-2 decoration-green-500 hover:text-gray-400 hover:decoration-0">Registrarse</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <div id="modal"  class=" fixed w-full max-w-3xs h-72 bg-white rounded-2xl overflow-hidden text-center hidden">
+            <div class=" w-full h-40">
+                <img id="imgModal" class="w-full h-full object-cover" src="" alt="error">
+            </div>
+            <div class="px-2 space-y-2">
+                <h2 class=" text-2xl font-semibold">Ha ocurrido un error</h2>
+            <h2 id="textModal" class=" font-semibold"></h2>
+
+            <button id="btnModal" class=" w-full bg-green-500 hover:bg-green-700 text-principal rounded-2xl cursor-pointer transition">Volver a intentar</button>
+            </div>
+            
+        </div>
+       
+
+    </div>
+
+    <script type="module" src="..//script/menu.js"></script>
+    <script type="module" src="..//script/login.js"></script>
+</body>
+
+</html>
